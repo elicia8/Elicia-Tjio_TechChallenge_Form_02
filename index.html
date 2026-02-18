@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form onsubmit="return validasiForm()">
+      <div class="form-background">
+        <div class="container">
+          <div class="flex-column">
+            <label>Nama</label>
+            <input type="text" placeholder="input nama" class="text" id="nama"/>
+            <p id="namaErr"></p>
+          </div>
+          <div class="flex-column">
+            <label>Email</label>
+            <input type="text" placeholder="input email" class="text" id="email"/>
+            <p id="emailErr"></p>
+          </div>
+          <div class="flex-column">
+            <label>Jenis Kelamin</label>
+            <div class="flex-row">
+              <div>
+                <input type="radio" id="laki-laki" name="jenis-kelamin" />
+                <label for="laki-laki">Laki-laki</label>
+              </div>
+              <div>
+                <input type="radio" id="perempuan" name="jenis-kelamin" />
+                <label for="perempuan">Perempuan</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
