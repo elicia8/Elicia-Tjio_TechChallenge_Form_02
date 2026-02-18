@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form onsubmit="return validasiForm()">
+    <form>
+      <!-- membuat beberapa div supaya lebih mudah stylingnya (untuk flexbox) -->
       <div class="form-background">
         <div class="container">
+          <!-- membuat label nama dan input text untuk nama -->
           <div class="flex-column">
             <label>Nama</label>
             <input type="text" placeholder="input nama" class="text" id="nama"/>
+            <!-- secara default belum ada tulisan eror apapun namun nanti akan diupdate -->
             <p id="namaErr"></p>
           </div>
+          <!-- membuat label email dan input text untuk email -->
           <div class="flex-column">
             <label>Email</label>
             <input type="text" placeholder="input email" class="text" id="email"/>
             <p id="emailErr"></p>
           </div>
+          <!-- membuat radiobox untuk jenis kelamin lalu mengassign name yang sama yaitu jenis-kelamin supaya bisa pilih salah satu -->
           <div class="flex-column">
             <label>Jenis Kelamin</label>
             <div class="flex-row">
